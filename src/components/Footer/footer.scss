@@ -1,0 +1,42 @@
+.footer-container{
+  height: 70px;
+  font-size: 12px;
+  .upper-footer{
+    height: 45%;
+    background: #1D2327;
+    color: #186173;
+    ul{
+      list-style-type: none;
+      margin: 0;
+      padding-top: 10px;
+      li{
+        display: inline;
+        padding: 0 5px;
+        border-right: 1px solid #31312C;
+        &:last-child{
+          border-right: 0;
+        }
+
+        a{
+          color: #186173;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .lower-footer{
+    height: 55%;
+    background: #000000;
+    color: #777777;
+
+    ul{
+      list-style-type: none;
+      margin: 0;
+      li{
+        display: inline;
+        margin-left: 10px;
+      }
+    }
+  }
+}

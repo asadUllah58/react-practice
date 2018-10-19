@@ -1,0 +1,23 @@
+.card-container{
+  width: 85%;
+  min-height: 250px;
+  text-align: center;
+  margin: auto;
+  .card-image{
+    width: 100%;
+    height: auto;
+  }
+}
+
+.horizontal-card-container{
+  display: grid;
+  grid-template-columns: 180px 600px;
+  margin: auto;
+
+  .horizontal-card-image{
+    padding-top: 14px;
+  }
+  .horizontal-card-content{
+    text-align: left;
+  }
+}

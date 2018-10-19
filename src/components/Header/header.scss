@@ -1,0 +1,25 @@
+@import '../../common.scss';
+
+.main-header{
+  height: 100%;
+  background-image: url('../../Images/top-section_2180x750.jpg');
+  .header-content{
+    margin: auto;
+    padding: 15%;
+
+    width: 550px;
+    text-align: center;
+    color: #fff;
+
+    .header-title{
+      font-size: 30px;
+      text-transform: capitalize;
+      margin: auto;
+    }
+
+    .header-description{
+      width: 450px;
+      margin: 20px auto;
+    }
+  }
+}

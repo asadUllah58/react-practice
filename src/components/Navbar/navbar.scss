@@ -1,0 +1,54 @@
+@import '../../common.scss';
+.title{
+  text-align: left;
+  font-size: 25px;
+}
+.navbar-container{
+  background: #282c34;
+  color: #fff;
+  padding: 15px 20px;
+  .navbar-body{
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
+.navbar-list{
+  list-style-type: none;
+  margin: 0;
+  text-align: right;
+  li{
+    display: inline;
+    margin-left: 20px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all .2s ease-in;
+    border-radius: 6px;
+    &:hover{
+      background: #000;
+      box-shadow: 6px 6px rgba(0, 0, 0, .2);
+      padding: 5px 10px 15px;
+    }
+
+    &:last-child{
+      &:hover{
+        background: none;
+        box-shadow: none;
+      }
+    }
+    
+    a{
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+
+.increment-button{
+  background: #708090;
+  border: #708090;
+  width: 85px;
+  height: 30px;
+  color: #fff;
+  border-radius: 3px;
+  
+}
