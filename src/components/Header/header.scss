@@ -1,9 +1,10 @@
 @import '../../common.scss';
 
-.main-header{
+.mainHeader{
   height: 100%;
   background-image: url('../../Images/top-section_2180x750.jpg');
-  .header-content{
+  .headerContent{
+    @extend %container;
     margin: auto;
     padding: 15%;
 
@@ -11,13 +12,13 @@
     text-align: center;
     color: #fff;
 
-    .header-title{
+    .headerTitle{
       font-size: 30px;
       text-transform: capitalize;
       margin: auto;
     }
 
-    .header-description{
+    .headerDescription{
       width: 450px;
       margin: 20px auto;
     }

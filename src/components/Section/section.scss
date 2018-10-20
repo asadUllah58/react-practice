@@ -1,8 +1,9 @@
 @import '../../common.scss';
-.section-container{
+.sectionContainer{
+  @extend %container;
   padding: 90px 0 0 0;
 
-  .section-heading{
+  .sectionHeading{
     font-size: 28px;
     padding-bottom: 30px;
   }

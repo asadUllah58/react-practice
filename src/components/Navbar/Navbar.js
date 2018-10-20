@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import './navbar.scss'
+import style from './navbar.scss'
 
 export default class Navbar extends Component {
   constructor(props){
@@ -15,10 +15,10 @@ export default class Navbar extends Component {
   }
   render() {
     return (
-      <nav className="navbar-container">
-        <div className="container navbar-body">
-          <div className="title">{this.props.title} {this.state.counter > 0 ? this.state.counter : "" }</div>
-          <ul className="navbar-list">
+      <nav className={style.navbarContainer}>
+        <section className={style.navbarBody}>
+          <div className={style.title}>{this.props.title} {this.state.counter > 0 ? this.state.counter : "" }</div>
+          <ul className={style.navbarList}>
             {
               this.props.menus.map(item => {
                 return (
@@ -26,9 +26,9 @@ export default class Navbar extends Component {
                 )
               })
             }
-            <li><button className="increment-button" onClick={this.alertFunction}>Increment</button></li>
+            <li><button className={style.incrementButton} onClick={this.alertFunction}>Increment</button></li>
           </ul>
-        </div>
+        </section>
       </nav>
     );
   }

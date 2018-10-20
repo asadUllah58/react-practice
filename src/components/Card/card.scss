@@ -1,23 +1,29 @@
-.card-container{
+.cardContainer{
   width: 85%;
   min-height: 250px;
   text-align: center;
   margin: auto;
-  .card-image{
+  .cardImage{
     width: 100%;
     height: auto;
   }
+
+  h1{
+    font-size: 1rem;
+  }
 }
 
-.horizontal-card-container{
+.horizontalCardContainer{
   display: grid;
   grid-template-columns: 180px 600px;
   margin: auto;
-
-  .horizontal-card-image{
-    padding-top: 14px;
+  h1{
+    font-size: 1rem;
   }
-  .horizontal-card-content{
+  .horizontalCardImage{
+    margin: auto;
+  }
+  .horizontalCardContent{
     text-align: left;
   }
 }

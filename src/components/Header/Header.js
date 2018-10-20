@@ -1,18 +1,18 @@
 import React, {Component} from 'react';
-import './header.scss';
+import style from './header.scss';
 class Header extends Component{
   render(){
     return(
-      <header className="main-header">
-        <div className="container header-content">
-          <div className="header-title">
+      <header className={style.mainHeader}>
+        <section className={style.headerContent}>
+          <section className={style.headerTitle}>
             {this.props.headerTitle}
-          </div>
+          </section>
 
-          <p className="header-description">
+          <p className={style.headerDescription}>
             {this.props.headerDescription}
           </p>
-        </div>
+        </section>
       </header>
     )
   }

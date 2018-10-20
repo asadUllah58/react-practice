@@ -1,15 +1,12 @@
 import React, {Component} from 'react'
-import './footer.scss'
+import style from './footer.scss'
+
 export default class Footer extends Component{
   render(){
     return(
-      <footer className="footer-container">
-        <div className="upper-footer">
+      <footer className={style.footerContainer}>
+        <section className={style.upperFooter}>
           <ul>
-            {/* <li>Contact us</li>
-            <li>About Clipmine</li>
-            <li>Blog</li>
-            <li>Help Center</li> */}
             {
               this.props.menus.map(
                 item => {
@@ -20,15 +17,15 @@ export default class Footer extends Component{
               )
             }
           </ul>
-        </div>
+        </section>
 
-        <div className="lower-footer">
+        <section className={style.lowerFooter}>
           <ul>
             <li>&copy;{this.props.copyrightText}</li>
             <li>Terms of use</li>
             <li>Privacy Policy</li>
           </ul>
-        </div>
+        </section>
       </footer>
     );
   }

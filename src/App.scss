@@ -1,18 +1,22 @@
 @import './common.scss';
 
-.App{
+.app{
   text-align: center;
   display: grid;
 }
 
-.section-help-viewers{
+.sectionHelpViewers{
   @include gridStyle(auto auto auto);
 }
 
-.section-features{
+.sectionFeatures{
   @include gridStyle(auto auto auto);
 }
 
-.section-video-collection{
+.sectionBenefits{
+  display: inline-block;
+}
+
+.sectionVideoCollection{
   @include gridStyle(auto auto);
 }
