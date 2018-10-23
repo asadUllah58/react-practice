@@ -20,3 +20,17 @@
 .sectionVideoCollection{
   @include gridStyle(auto auto);
 }
+
+@media only screen and (max-width: 500px){
+  .sectionVideoCollection{
+    @include gridStyle(auto);
+  }
+
+  .sectionFeatures{
+    @include gridStyle(auto);
+  }
+
+  .sectionHelpViewers{
+    @include gridStyle(auto);
+  }
+}

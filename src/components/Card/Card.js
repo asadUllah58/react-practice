@@ -15,9 +15,9 @@ export default class Card extends Component{
       return(
         <article className={this.props.type == "vertical" ? style.cardContainer : style.horizontalCardContainer}>
           <img src = {this.props.imageSource} className={this.props.type == "vertical" ? style.cardImage : style.horizontalCardImage}/>
-          <section className={this.props.type == "vertical" ? "" : style.horizontalCardContent}>
+          <section className={this.props.type == "vertical" ? (this.props.headingType == "inner" ? style.innerHeading : "") : style.horizontalCardContent}>
             <h1 className={style.cardHeading}>{this.props.heading}</h1>
-            <p className={style.cardDescription}>{this.props.description}</p>
+            <summary className={style.cardDescription}>{this.props.description}</summary>
           </section>
         </article>
       );

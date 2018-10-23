@@ -106,10 +106,14 @@ class App extends Component {
             <Card
               imageSource={require('./Images/collections/collection-startup_460x184.png')}
               type="vertical"
+              heading="Startups"
+              headingType="inner"
             />
             <Card
               imageSource={require('./Images/collections/collection-ml_461x184.png')}
+              heading="Machine Learning"
               type="vertical"
+              headingType="inner"
             />
           </section>
         </Section>
