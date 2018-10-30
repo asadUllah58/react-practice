@@ -1,6 +1,6 @@
 .cardContainer{
   width: 85%;
-  min-height: 250px;
+  /* min-height: 250px; */
   text-align: center;
   margin: auto;
   position: relative;
@@ -73,9 +73,24 @@
 @media only screen and (max-width: 500px){
   .cardContainer{
     margin-bottom: 50px;
+    h1{
+      margin: 15px 0;
+    }
   }
 
   .innerHeading{
     top: 40% !important;
+  }
+
+  .horizontalCardContainer{
+    
+    grid-template-columns: auto;
+    h1{
+      text-align: center;
+    }
+    summary{
+      text-align: center;
+      padding: 0 20px;
+    }
   }
 }

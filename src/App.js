@@ -7,9 +7,9 @@ class App extends Component {
   render() {
     var navMenu =
       [
-        { url: "#", title: "Blog" },
-        { url: "#", title: "Login" },
-        { url: "#", title: "Signup" }
+        { url: "/blog", title: "Blog" },
+        { url: "/login", title: "Login" },
+        { url: "/signup", title: "Signup" }
       ];
     return (
       <div className={style.app}>

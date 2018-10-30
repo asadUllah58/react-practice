@@ -8,7 +8,6 @@
     @extend %container;
     margin: auto;
     padding: 15%;
-
     width: 550px;
     text-align: center;
     color: #fff;
@@ -22,6 +21,17 @@
     .headerDescription{
       width: 450px;
       margin: 20px auto;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .headerContent{
+    width: 90% !important;
+    padding: 30px 10px !important;
+    
+    .headerDescription{
+      width: 100% !important;
     }
   }
 }
