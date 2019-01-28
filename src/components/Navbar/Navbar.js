@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import style from './navbar.scss'
 import { throws } from 'assert';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link, NavLink } from 'react-router-dom';
 import Route from 'react-router-dom/Route';
 export default class Navbar extends Component {
   constructor(props) {
