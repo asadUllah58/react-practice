@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import style from './App.scss';
-import { Header, Navbar, Section, Card, Footer } from './components';
+import { Header, Navbar, Section, Card, Footer, Accordion } from './components';
 //import * as image from './Images/features/index-sharing_300x120.png'
 
 class App extends Component {
@@ -29,14 +29,14 @@ class App extends Component {
             <Card
               imageSource={require("./Images/video-emma_280x187.png")}
               heading="Meaningful sharing"
-              description="It is a long established fact that a reader will be distracted by the readable content "
+              description="It is a long established fact that a reader will be distracted by the readable content"
               type="vertical"
             />
 
             <Card
               imageSource={require("./Images/video-fallout_560x374.png")}
               heading="Meaningful sharing"
-              description="It is a long established fact that a reader will be distracted by the readable content "
+              description="It is a long established fact that a reader will be distracted by the readable content"
               type="vertical"
             />
 
@@ -116,6 +116,19 @@ class App extends Component {
               headingType="inner"
             />
           </section>
+        </Section>
+
+        <Section>
+          <Accordion 
+            title = "Section 1"
+            content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+          />
+          <Accordion 
+            title = "Section 2"
+            content = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+
+          />
         </Section>
 
         <Footer
